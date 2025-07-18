@@ -1,5 +1,4 @@
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+library financial_utils;
+
+export 'sip_calculator.dart';
+export 'lumpsum_calculator.dart';

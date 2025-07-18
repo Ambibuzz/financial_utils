@@ -1,39 +1,65 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# financial_utils
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A lightweight Dart package for common financial calculations. Currently supports:
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+- 📈 **SIP (Systematic Investment Plan) Calculator**
+- 💰 **Lumpsum Investment Calculator**
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Ideal for personal finance tools, mutual fund apps, and educational purposes.
 
-## Features
+---
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## ✨ Features
 
-## Getting started
+- **SIP Calculator**  
+  Calculate the future value, invested amount, and estimated returns for a monthly investment over a fixed duration with compounded annual returns.
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- **Lumpsum Calculator**  
+  Calculate the future value, invested amount, and estimated returns for a one-time investment with compounded annual returns.
 
-## Usage
+---
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+## 🚀 Getting started
 
+Add the following to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  financial_utils: ^0.0.1
+```
 ```dart
-const like = 'sample';
+import 'package:financial_utils/sip_calculator.dart';
+import 'package:financial_utils/lumpsum_calculator.dart';
 ```
 
-## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+
+## SIP Example
+
+```dart
+final sip = SipCalculator.calculate(
+  monthlyInvestment: 5000,
+  annualRatePercent: 12,
+  durationInYears: 10,
+);
+
+print('Invested: ₹${sip.investedAmount}');
+print('Return: ₹${sip.estimatedReturn}');
+print('Total: ₹${sip.totalAmount}');
+
+```
+
+## Lumpsum Example
+
+```dart
+final lumpsum = LumpsumCalculator.calculate(
+  investmentAmount: 100000,
+  annualRatePercent: 10,
+  durationInYears: 5,
+);
+
+print('Invested: ₹${lumpsum.investedAmount}');
+print('Return: ₹${lumpsum.estimatedReturn}');
+print('Total: ₹${lumpsum.totalAmount}');
+
+```
