@@ -1,7 +1,7 @@
 name: financial_utils
-description: "A new Flutter package project."
+description: "A Dart package for calculating SIP and lumpsum investment returns."
 version: 0.0.1
-homepage:
+homepage: https://ambibuzz.com
 
 environment:
   sdk: ^3.7.2
