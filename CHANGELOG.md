@@ -1,3 +1,6 @@
-## 0.0.1
+## [0.0.1] - 2025-07-18
 
-* TODO: Describe initial release.
+- Initial release with two calculators:
+    - SIP Calculator
+    - Lumpsum Calculator
+
