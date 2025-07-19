@@ -63,3 +63,35 @@ print('Return: ₹${lumpsum.estimatedReturn}');
 print('Total: ₹${lumpsum.totalAmount}');
 
 ```
+
+## SWP Example
+
+```dart
+final swpResult = SwpCalculator.calculate(
+  totalInvestment: 500000,
+  monthlyWithdrawal: 10000,
+  annualRatePercent: 8,
+  durationInMonths: 60,
+);
+
+print(swpResult.remainingAmount);    // Remaining corpus
+print(swpResult.totalWithdrawn);     // Total withdrawn
+print(swpResult.estimatedReturn);    // Estimated return
+
+```
+
+## FD Example
+
+```dart
+final fdResult = FdCalculator.calculate(
+  principal: 100000,
+  annualRatePercent: 7,
+  durationInYears: 5,
+  compoundingFrequency: CompoundingFrequency.quarterly,
+);
+
+print(fdResult.totalAmount);         // Maturity amount
+print(fdResult.investedAmount);      // Original deposit
+print(fdResult.estimatedReturn);     // Interest earned
+
+```
