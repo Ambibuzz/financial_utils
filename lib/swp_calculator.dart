@@ -1,5 +1,3 @@
-import 'dart:math';
-
 class SwpCalculatorResult {
   final double investedAmount;
   final double totalWithdrawalAmount;
