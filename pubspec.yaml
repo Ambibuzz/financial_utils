@@ -1,6 +1,6 @@
 name: financial_utils
-description: "A Dart package for calculating SIP and lumpsum investment returns."
-version: 0.0.1
+description: "A Dart package with utilities for calculating SIP, Lumpsum, SWP, and FD returns."
+version: 0.0.2
 homepage: https://ambibuzz.com
 
 environment:
